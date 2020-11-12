@@ -7,6 +7,7 @@
     android:weightSum="6"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -19,6 +20,7 @@
         android:layout_marginRight="20dp"
         android:layout_marginTop="16dp"
         android:layout_marginLeft="20dp"
+        android:fontFamily="@font/synetactile_regular"
         android:layout_marginBottom="8dp"
         />
     <Button
@@ -27,6 +29,7 @@
         android:layout_weight="1"
         android:textColor="#FFEB3B"
         android:text="SECOND KAMLA"
+        android:fontFamily="@font/synetactile_regular"
         android:id="@+id/btn2"
         android:textSize="20sp"
         android:padding="30dp"
@@ -41,6 +44,7 @@
     android:layout_weight="1"
         android:text="THIRD KAMLA"
         android:textColor="#FFEB3B"
+        android:fontFamily="@font/synetactile_regular"
         android:textSize="20sp"
     android:id="@+id/btn3"
         android:padding="30dp"
@@ -56,6 +60,7 @@
         android:textColor="#FFEB3B"
         android:text="FOURTH KAMLA"
         android:textSize="20sp"
+        android:fontFamily="@font/synetactile_regular"
         android:id="@+id/btn4"
         android:padding="30dp"
     android:layout_marginRight="20dp"
@@ -71,6 +76,7 @@
         android:textColor="#FFEB3B"
         android:textSize="20sp"
     android:id="@+id/btn5"
+        android:fontFamily="@font/synetactile_regular"
         android:padding="30dp"
     android:layout_marginRight="20dp"
     android:layout_marginTop="8dp"
@@ -87,7 +93,8 @@
         android:textColor="#FFEB3B"
         android:padding="30dp"
     android:layout_marginRight="20dp"
-    android:layout_marginTop="8dp"
+        android:fontFamily="@font/synetactile_regular"
+        android:layout_marginTop="8dp"
     android:layout_marginLeft="20dp"
     android:layout_marginBottom="8dp"
         />

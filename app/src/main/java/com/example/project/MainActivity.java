@@ -2,6 +2,7 @@ package com.example.project;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -30,18 +31,40 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
+
         switch (v.getId()){
             case R.id.btn1:
+                Intent intent=new Intent(MainActivity.this,MainActivity4.class);
+                intent.putExtra("kalama","لآ اِلَهَ اِلّا اللّهُ مُحَمَّدٌ رَسُوُل اللّهِ");
+                intent.putExtra("english","There is no god but Allah, Muhammad is the Messenger of Allah.t");
+                startActivity(intent);
+
                 break;
                 case R.id.btn2:
+                    Intent intent1=new Intent(getApplicationContext(),MainActivity4.class);
+                    intent1.putExtra("kalama","اشْهَدُ انْ لّآ اِلهَ اِلَّا اللّهُ وَ اَشْهَدُ اَنَّ مُحَمَّدً اعَبْدُه وَرَسُولُه");
+                    intent1.putExtra("english","I bear witness that there is no god but Allah, and I bear witness that Muhammad is a servant and a Messenger of Allah");
+                    startActivity(intent1);
+
                 break;
                 case R.id.btn3:
+                    Intent intent2=new Intent(MainActivity.this,MainActivity4.class);
+                    intent2.putExtra("kalama","سُبْحَان اللهِ وَ الْحَمْدُ لِلّهِ وَ لآ اِلهَ اِلّا اللّهُ، وَ اللّهُ اَكْبَرُ وَلا حَوْلَ وَلاَ قُوَّة ِ الَّا بِاللّهِ الْعَلِىّ الْعَظِيْم");
+                    intent2.putExtra("english","Glory be to Allah and Praise to Allah, and there is no god but Allah, and Allah is the Greatest.\n" +
+                            "\n" +
+                            "And there is no Might or Power except with Allah, the Exalted, the Great one.\n" +
+                            "\n");
+                    startActivity(intent2);
+
                 break;
                 case R.id.btn4:
+
                 break;
                 case R.id.btn5:
+
                 break;
                 case R.id.btn6:
+
                 break;
         }
 
