@@ -23,15 +23,19 @@ public class MainActivity4 extends AppCompatActivity {
         Intent intent1=getIntent();
         String s1=intent1.getStringExtra("kalama");
         String m1=intent1.getStringExtra("english");
+        String u1=intent1.getStringExtra("urdu");
+        String eu1=intent1.getStringExtra("Arb");
         // send to data fragment1
         BlankFragment blankFragment11=new BlankFragment();
         Bundle bundle11=new Bundle();
         bundle11.putString("kalama",s1);
+        bundle11.putString("Arb",eu1);
         blankFragment11.setArguments(bundle11);
         // send to data fragment2
         BlankFragment2 blankFragment21=new BlankFragment2();
         Bundle bundle21 =new Bundle();
         bundle21.putString("english",m1);
+        bundle21.putString("urdu",u1);
         blankFragment21.setArguments(bundle21);
 
 

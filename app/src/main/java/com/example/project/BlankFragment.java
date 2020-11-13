@@ -15,7 +15,7 @@ import android.widget.TextView;
  * create an instance of this fragment.
  */
 public class BlankFragment extends Fragment {
-    TextView tview22;
+    TextView tview22,tview21;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -63,9 +63,12 @@ public class BlankFragment extends Fragment {
         // Inflate the layout for this fragment
         View v= inflater.inflate(R.layout.fragment_blank, container, false);
         tview22=v.findViewById(R.id.tview22);
+        tview21=v.findViewById(R.id.tview21);
         Bundle bundle1=getArguments();
         String e1=bundle1.getString("kalama");
         tview22.setText(e1);
+        String u1=bundle1.getString("Arb");
+        tview21.setText(u1);
         return v;
     }
 }
